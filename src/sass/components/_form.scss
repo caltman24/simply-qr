@@ -33,8 +33,16 @@ form {
     font-size: 1rem;
     transition: all 300ms ease;
 
-    &:hover {
-      cursor: pointer;
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+        transform: translateY(-1px);
+        transition: all 200ms ease;
+      }
+    }
+
+    &:active {
       opacity: 0.8;
       transform: translateY(-1px);
       transition: all 200ms ease;
